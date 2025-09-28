@@ -9,6 +9,12 @@
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
+        // CSRF token validation
+        if(!isset($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+            header('Location: registerForm.php?user=csrf_error');
+            exit;
+        }
+
         if(empty($_FILES['uploadedFile']['name'])){
             header("Location: uploadFileForm.php?file=empty");
             exit;

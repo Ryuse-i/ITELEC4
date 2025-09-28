@@ -57,10 +57,16 @@ The project folder contains the following PHP scripts:
 6. addUser.php and addUserForm.php
     - Provides a form to add another user in the system.
 
-7. style.css
+7. uploadFile.php and addFileForm.php
+    - Provides a file image upload for the user in the system.
+
+8. gallery.php
+    - Lists all of the uploaded image in the system.
+
+9. style.css
     - Contains the page styling.
 
-8. function.js
+10. function.js
     - Contains a few DOM manipulations
 
 
@@ -71,6 +77,15 @@ The project folder contains the following PHP scripts:
 - View Users (Read): Open dashboard.php to see a list of all registered users.
 - Update User (Update): Edit a user's name and email using update.php.
 - Delete User (Delete): Remove a user by clicking the button to pass their ID in delete.php.
+- File upload : Upload a file in the server.
+- Logout functionality
+7. uploadFile.php and addFileForm.php
+    - Provides a file image upload for the user in the system.
+
+8. gallery.php
+    - Lists all of the uploaded image in the system.910
+- File upload d: uploadUpload a fiee le in the setrver.
+-a aLogout cuntionfunctionality
 
 -----------------------------------------
 5. TESTING THE SYSTEM
@@ -82,6 +97,9 @@ The project folder contains the following PHP scripts:
 5. Use updateForm.php to change a user's details.
 6. Use deleteForm.php to remove a user from the database.
 7. Check dashboard.php to confirm changes in the "users" table.
+8. Go inside the gallery to upload an image.
+9. Check the upload images in the gallery.
+10. Logout using the logout button on the dashboard.
 
 
 

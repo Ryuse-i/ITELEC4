@@ -22,44 +22,44 @@
 
         // Server-side input validation
         if(empty($name) || empty($email) || empty($password)){
-            header('Location: loginForm.php?user=empty_fields');
+            header('Location: addUserForm.php?user=empty_fields');
             exit;
         }
 
         //Password validations
         // Check for minimum length
         if(strlen($password) < 8){
-            header('Location: registerForm.php?user=pass_short');
+            header('Location: addUserForm.php?user=pass_short');
             exit;
         }
 
         // Check for at least one uppercase letter
         if(!preg_match('/[A-Z]/', $password)){
-            header('Location: registerForm.php?user=no_uppercase');
+            header('Location: addUserForm.php?user=no_uppercase');
             exit;
         }
 
         // Check for at least one lowercase letter
         if(!preg_match('/[a-z]/', $password)){
-            header('Location: registerForm.php?user=no_lowercase');
+            header('Location: addUserForm.php?user=no_lowercase');
             exit;
         }
 
         // Check for at least one digit
         if(!preg_match('/\d/', $password)){
-            header('Location: registerForm.php?user=no_digits');
+            header('Location: addUserForm.php?user=no_digits');
             exit;
         }
 
         // Check for at least one special character
         if(!preg_match('/\W/', $password)){
-            header('Location: registerForm.php?user=no_special_chars');
+            header('Location: addUserForm.php?user=no_special_chars');
             exit;
         }
 
         // Validate email format
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            header('Location: registerForm.php?user=invalid_email');
+            header('Location: addUserForm.php?user=invalid_email');
             exit;
         }
 

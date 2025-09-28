@@ -2,13 +2,15 @@
     session_start();
     require_once "db.php";
 
-    // CSRF token validation
-    if(!isset($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
-        header('Location: registerForm.php?user=csrf_error');
-        exit;
-    }
+    
 
     if($_SERVER["REQUEST_METHOD"] === "POST"){
+        // CSRF token validation
+        if(!isset($_SESSION['csrf_token']) || !hash_equals($_SESSION['csrf_token'], $_POST['csrf_token'])) {
+            header('Location: registerForm.php?user=csrf_error');
+            exit;
+        }
+
         $name = trim($_POST['name']);
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
@@ -17,7 +19,7 @@
 
         //Check for empty fields
         if(empty($name) || empty($email) || empty($password)){
-            header('Location: loginForm.php?user=empty_fields');
+            header('Location: registerForm.php?user=empty_fields');
             exit;
         }
 

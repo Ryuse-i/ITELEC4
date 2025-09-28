@@ -795,3 +795,4 @@
 [2025-09-28 04:39:56]Type: 2 | Message: Undefined array key "register" | File: C:\xampp\htdocs\ITELEC4\dashboard.php | Line: 30
 [2025-09-28 04:46:55]Type: 2 | Message: Undefined array key "register" | File: C:\xampp\htdocs\ITELEC4\dashboard.php | Line: 30
 [2025-09-28 04:52:15]Type: 2 | Message: Undefined array key "register" | File: C:\xampp\htdocs\ITELEC4\dashboard.php | Line: 30
+[2025-09-28 16:02:18] Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'system_db.user' doesn't exist in C:\xampp\htdocs\ITELEC4\dashboard.php on line 34
