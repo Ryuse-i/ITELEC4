@@ -79,13 +79,6 @@ The project folder contains the following PHP scripts:
 - Delete User (Delete): Remove a user by clicking the button to pass their ID in delete.php.
 - File upload : Upload a file in the server.
 - Logout functionality
-7. uploadFile.php and addFileForm.php
-    - Provides a file image upload for the user in the system.
-
-8. gallery.php
-    - Lists all of the uploaded image in the system.910
-- File upload d: uploadUpload a fiee le in the setrver.
--a aLogout cuntionfunctionality
 
 -----------------------------------------
 5. TESTING THE SYSTEM
