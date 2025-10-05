@@ -8,11 +8,10 @@
     }
 
     if($_SERVER["REQUEST_METHOD"] === "POST"){
-        $name = trim($_POST['name']);
         $email = trim($_POST['email']);
         $password = trim($_POST['password']);
 
-        if(empty($name) || empty($email) || empty($password)){
+        if(empty($email) || empty($password)){
             header('Location: loginForm.php?user=empty_fields');
             exit;
         }
@@ -24,9 +23,8 @@
 
 
         try{
-            $sql = 'SELECT * FROM users WHERE name = :name AND email = :email';
+            $sql = 'SELECT * FROM users WHERE email = :email';
             $statement = $pdo->prepare($sql);
-            $statement->bindValue(":name", $name, PDO::PARAM_STR);
             $statement->bindValue(":email", $email, PDO::PARAM_STR);
             $statement->execute();
 

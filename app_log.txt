@@ -1,1 +1,5 @@
 [2025-09-29 15:19:19] Exception: SQLSTATE[HY000] [1049] Unknown database 'system_d' in C:\xampp\htdocs\ITELEC4\db.php on line 13
+[2025-10-01 09:44:43]Type: 2 | Message: Undefined variable $name | File: C:\xampp\htdocs\ITELEC4\login.php | Line: 28
+[2025-10-01 09:44:43] Exception: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in C:\xampp\htdocs\ITELEC4\login.php on line 30
+[2025-10-01 10:09:33]Type: 2 | Message: Undefined array key "login" | File: C:\xampp\htdocs\ITELEC4\dashboard.php | Line: 19
+[2025-10-01 10:09:33]Type: 2 | Message: Undefined array key "register" | File: C:\xampp\htdocs\ITELEC4\dashboard.php | Line: 25
